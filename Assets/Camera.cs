@@ -23,7 +23,7 @@ public class Camera : MonoBehaviour
 
     void Shake ()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space)|| Input.GetKey(KeyCode.Z))
         {
             camTransform.localPosition = originalPos + UnityEngine.Random.insideUnitSphere * 0.05f;
         }
